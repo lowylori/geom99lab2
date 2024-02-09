@@ -29,7 +29,7 @@
   esriConfig.apiKey = "YOUR_API_KEY";
 
   const map = new Map({
-    basemap: "arcgis/topographic" // basemap styles service
+    basemap: "gray" // basemap styles service
   });
 
   const view = new MapView({
@@ -46,6 +46,7 @@
     longitude: -118.80657463861,
     latitude: 34.0005930608889
     };
+
     const simpleMarkerSymbol = {
     type: "simple-marker",
     color: [226, 119, 40],  // Orange
@@ -54,10 +55,12 @@
         width: 1
         }
     };
+
     const pointGraphic = new Graphic({
         geometry: point,
         symbol: simpleMarkerSymbol
     });
+
     graphicsLayer.add(pointGraphic);
 
      // Create a line geometry
@@ -69,15 +72,18 @@
             [-118.808878330345, 34.0016642996246]  //Longitude, latitude
         ]
     };
+
     const simpleLineSymbol = {
         type: "simple-line",
         color: [226, 119, 40], // Orange
         width: 2
     };
+
     const polylineGraphic = new Graphic({
         geometry: polyline,
         symbol: simpleLineSymbol
     });
+
     graphicsLayer.add(polylineGraphic);
     
      // Create a polygon geometry
@@ -105,6 +111,7 @@
         title: "{Name}",
         content: "{Description}"
     }
+    
     const attributes = {
         Name: "Graphic",
         Description: "I am a polygon"
