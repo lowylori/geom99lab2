@@ -19,7 +19,10 @@
         height: 100%;
         width: 100%;
       }
-
+      .heading{
+        display: flex;
+        flex-direction: column;
+      }
       #controls {
         width: 300px;
         max-height: 90vh;
@@ -110,6 +113,9 @@
   </head>
 
   <body>
+    <div class="heading">
+        <h1>Love is in the Air</h1>
+    </div>
     <div id="viewDiv"></div>
     <calcite-card id="controls" class="calcite-mode-dark">
       <div slot="title">Controls</div>
