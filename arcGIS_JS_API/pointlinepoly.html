@@ -29,7 +29,7 @@
   esriConfig.apiKey = "YOUR_API_KEY";
 
   const map = new Map({
-    basemap: "gray" // basemap styles service
+    basemap: "gray" // changed from arcgis/topographic, causing issues
   });
 
   const view = new MapView({
@@ -111,7 +111,7 @@
         title: "{Name}",
         content: "{Description}"
     }
-    
+
     const attributes = {
         Name: "Graphic",
         Description: "I am a polygon"
