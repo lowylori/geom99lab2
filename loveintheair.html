@@ -1,3 +1,4 @@
+<!-- Example modified from: https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-afrenderer/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/dark/main.css" />
     <script src="https://js.arcgis.com/4.28/"></script>
     <script type="module" src="https://js.arcgis.com/calcite-components/1.9.2/calcite.esm.js"></script>
+    <script src="https://basemapstyles-api.arcgis.com/arcgis/rest/services/styles/v2/styles/arcgis/hillshade/dark"
     <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/1.9.2/calcite.css" />
 
     <style>
@@ -67,7 +69,7 @@
         });
 
         const map = new Map({
-          basemap: "dark-gray-vector",
+          basemap: arcgis/hillshade/dark,
           layers: [layer]
         });
 
