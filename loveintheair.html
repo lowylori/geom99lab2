@@ -1,4 +1,5 @@
 <!-- Example modified from: https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-afrenderer/ -->
+<!-- Workflow to bring in the data to AGOL: https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/preparing-your-data-for-use-with-the-flowrenderer/-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -78,7 +79,7 @@
         const view = new MapView({
           container: "viewDiv",
           map: map,
-          zoom: 4,
+          zoom: 5,
           center: [-98, 39]
         });
         const legendExpand = new Expand({
