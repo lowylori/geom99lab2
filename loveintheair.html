@@ -48,7 +48,9 @@
         Expand
       ) {
         const layer = new ImageryTileLayer({
-          url: "https://tiledimageservices.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/NLDAS_Hourly_8_30_2021/ImageServer",
+            portalItem: {
+                id: "4e016cfcc7564588a13b0e1d8c529d5f",
+            },
           title: "Winds",
           renderer: {
             type: "flow", // autocasts to new FlowRenderer
@@ -69,7 +71,8 @@
         });
 
         const map = new Map({
-          basemap: arcgis/hillshade/dark,
+            basemap: "dark-gray-vector",
+          <!-- basemap: arcgis/hillshade/dark, -->
           layers: [layer]
         });
 
